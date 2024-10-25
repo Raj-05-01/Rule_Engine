@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rule Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Rule Engine</h1>
+
+<div>
+    <h2>Create Rule</h2>
+    <textarea id="ruleString" rows="4" cols="50" placeholder="Enter rule..."></textarea>
+    <button onclick="createRule()">Create Rule</button>
+</div>
+
+<div>
+    <h2>Combine Rules</h2>
+    <textarea id="rulesList" rows="4" cols="50" placeholder="Enter rules separated by new lines..."></textarea>
+    <button onclick="combineRules()">Combine Rules</button>
+</div>
+
+<div>
+    <h2>Result</h2>
+    <form id="eligibilityForm">
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="text" name="department" placeholder="Department" required>
+        <input type="number" name="income" placeholder="Income" required>
+        <input type="number" name="spend" placeholder="Spend" required>
+        <button type="submit">Check Eligibility</button>
+    </form>
+    <pre id="result"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
